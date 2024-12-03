@@ -18,12 +18,18 @@
 
 #include "main.h"
 #include "sys_clocks.h"
+#include "led.h"
 
 int main(void)
 {
+	LED_LD2_Init();
     /* Loop forever */
 	while(1)
 	{
+		LED_LD2_On();
+		Delay(500);
+		LED_LD2_Off();
+		Delay(500);
 
 	}
 }
