@@ -25,8 +25,8 @@ int main(void)
 	SystemClockSetup();
 	LED_LD2_Init();
 
-	SoftTimerAction(&TimerLD2, LED_LD2_Toggle);
-	SoftTimerStart(&TimerLD2, 500);
+	SoftTimerAction(&TimerLD2, TaskLD2);
+	SoftTimerStart(&TimerLD2, 200);
 
     /* Loop forever */
 	while(1)
@@ -35,6 +35,10 @@ int main(void)
 	}
 }
 
+void TaskLD2(void)
+{
+	LED_LD2_Toggle();
+}
 
 
 
