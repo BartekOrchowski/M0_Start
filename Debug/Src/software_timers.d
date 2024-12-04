@@ -1,4 +1,4 @@
-Src/sys_clocks.o: ../Src/sys_clocks.c ../Inc/main.h \
+Src/software_timers.o: ../Src/software_timers.c ../Inc/main.h \
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -7,7 +7,7 @@ Src/sys_clocks.o: ../Src/sys_clocks.c ../Inc/main.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h \
- ../Inc/sys_clocks.h ../Inc/sys_clocks.h
+ ../Inc/sys_clocks.h ../Inc/software_timers.h
 ../Inc/main.h:
 ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h:
@@ -18,4 +18,4 @@ Src/sys_clocks.o: ../Src/sys_clocks.c ../Inc/main.h \
 ../Drivers/CMSIS/Include/mpu_armv7.h:
 ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h:
 ../Inc/sys_clocks.h:
-../Inc/sys_clocks.h:
+../Inc/software_timers.h:

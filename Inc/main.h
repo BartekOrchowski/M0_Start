@@ -10,5 +10,6 @@
 
 #include <stdint.h>
 #include <stm32g4xx.h>
+#include "sys_clocks.h"
 
 #endif /* MAIN_H_ */

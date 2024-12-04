@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Src/led.c \
 ../Src/main.c \
+../Src/software_timers.c \
 ../Src/sys_clocks.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c 
@@ -14,6 +15,7 @@ C_SRCS += \
 OBJS += \
 ./Src/led.o \
 ./Src/main.o \
+./Src/software_timers.o \
 ./Src/sys_clocks.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o 
@@ -21,6 +23,7 @@ OBJS += \
 C_DEPS += \
 ./Src/led.d \
 ./Src/main.d \
+./Src/software_timers.d \
 ./Src/sys_clocks.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d 
@@ -33,7 +36,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/led.cyclo ./Src/led.d ./Src/led.o ./Src/led.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/sys_clocks.cyclo ./Src/sys_clocks.d ./Src/sys_clocks.o ./Src/sys_clocks.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/led.cyclo ./Src/led.d ./Src/led.o ./Src/led.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/software_timers.cyclo ./Src/software_timers.d ./Src/software_timers.o ./Src/software_timers.su ./Src/sys_clocks.cyclo ./Src/sys_clocks.d ./Src/sys_clocks.o ./Src/sys_clocks.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 
